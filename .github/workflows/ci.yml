@@ -13,8 +13,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    services:
+      postgres:
+        image: postgres:17
+        ports:
+          - 5432:5432
+        env:
+          POSTGRES_DB: reborn_data_base
+          POSTGRES_USER: reborn
+          POSTGRES_PASSWORD: reborn
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     env:
-      SPRING_PROFILES_ACTIVE: test
+      SPRING_PROFILES_ACTIVE: dev
+      DB_USER: reborn
+      DB_PASSWORD: reborn
       
     steps:
       # 1. Verificar el repositorio
