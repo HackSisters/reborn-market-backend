@@ -15,7 +15,21 @@
 - [Unit and Acceptance Tests](#unit-and-acceptance-tests)
 ---
 ## 💡Project Description
-We have developed this project with the specifications that were given to us at the beginning of the F5 Hackathon. Following the theme of the event, we have developed a market place. On this website you will be able to sell products related to parenting, from clothes to toys... We have implemented a basic auth, a small api and a database with PostgreSQL and Docker.
+
+This project was developed during the **7th edition of the HACKATHONF5**, organized by **Fundación Somos F5** and the multinational company **Globant**.  
+The entire development took place on **March 18 and 20**, and was presented on **March 21, 2025**.
+
+We are proud to say that our team was selected as **the winning team** of the hackathon.
+
+We built the project based on the specifications provided at the beginning of the hackathon.  
+Following the theme, we created a **marketplace focused on parenting**, where users can sell and buy products like clothes, toys, and more.
+
+The project includes:
+
+- Basic authentication
+- A small REST API
+- A PostgreSQL database
+- Docker support for easy deployment
 
 ---
 
@@ -100,6 +114,11 @@ URL: http://localhost:8080/api/v1/ + endpoint
 - **H2 Database**: In-memory database for temporary data storage.
 
 ---
+## 📦 Versions
+
+| Version | Date       | Main Changes                              | Link |
+|---------|------------|--------------------------------------------|------|
+| v1.0.0  | 2025-03-21 | First stable release, developed during a 48-hour hackathon with our full team release                       | [🔗 Download](https://github.com/HackSisters/reborn-market-backend/releases/tag/v1.0.0) |
 
 ## ⚙️Installation and Setup
 
@@ -201,7 +220,7 @@ mvn spring-boot:run -Dspring.profiles.active=dev
 
 #### Project made by:
 
--  [Yuliia Bila](https://github.com/YuliiaBi1a) 
+- [Yuliia Bila](https://github.com/YuliiaBi1a)
 - [Marta Bernardo](https://github.com/MartaBernardoZamora)
 - [Israel Espin](https://github.com/iespin)
 - [Yuliia Martynovych](https://github.com/yuliia-martynovych)
