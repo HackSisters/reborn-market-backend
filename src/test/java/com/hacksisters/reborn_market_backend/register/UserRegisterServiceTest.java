@@ -9,7 +9,6 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.util.*;
@@ -29,12 +28,9 @@ class UserRegisterServiceTest {
     @InjectMocks
     private UserRegisterService userRegisterService;
 
-    private BCryptPasswordEncoder encoder;
-
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-        encoder = new BCryptPasswordEncoder();
     }
 
     @Test
