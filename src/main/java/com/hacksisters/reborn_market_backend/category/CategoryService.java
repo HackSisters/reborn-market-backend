@@ -1,6 +1,5 @@
 package com.hacksisters.reborn_market_backend.category;
 
-import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
